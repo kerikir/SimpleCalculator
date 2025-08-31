@@ -33,7 +33,7 @@
     <string name="button_1">1</string>
     <string name="button_2">2</string>
     <string name="button_3">3</string>
-    <string name="button_sum">+</string>
+    <string name="button_addition">+</string>
 
     <string name="button_exponent">exp</string>
     <string name="button_000">000</string>
