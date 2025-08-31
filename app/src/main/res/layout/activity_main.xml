@@ -64,6 +64,31 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+            
+            <TextView
+                android:id="@+id/btnSqrt"
+                android:text="@string/button_squareRoot"
+                />
+
+            <TextView
+                android:id="@+id/btnLog2"
+                android:text="@string/button_log2"
+                />
+
+            <TextView
+                android:id="@+id/btnLn"
+                android:text="@string/button_ln"
+                />
+
+            <TextView
+                android:id="@+id/btnLeftBracket"
+                android:text="@string/button_leftBracket"
+                />
+
+            <TextView
+                android:id="@+id/btnRightBracket"
+                android:text="@string/button_rightBracket"
+                />
 
         </LinearLayout>
 
@@ -75,6 +100,31 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/btnPow"
+                android:text="@string/button_powerOfNumber"
+                />
+
+            <TextView
+                android:id="@+id/btnClear"
+                android:text="@string/button_allClear"
+                />
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:text="@string/button_back"
+                />
+
+            <TextView
+                android:id="@+id/btnPercent"
+                android:text="@string/button_percent"
+                />
+
+            <TextView
+                android:id="@+id/btnDiv"
+                android:text="@string/button_division"
+                />
+
         </LinearLayout>
 
 
@@ -84,6 +134,31 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnSin"
+                android:text="@string/button_sinus"
+                />
+
+            <TextView
+                android:id="@+id/btnSeven"
+                android:text="@string/button_7"
+                />
+
+            <TextView
+                android:id="@+id/btnEight"
+                android:text="@string/button_8"
+                />
+
+            <TextView
+                android:id="@+id/btnNine"
+                android:text="@string/button_9"
+                />
+
+            <TextView
+                android:id="@+id/btnTimes"
+                android:text="@string/button_multiplication"
+                />
 
         </LinearLayout>
 
@@ -95,6 +170,31 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/btnCos"
+                android:text="@string/button_cosine"
+                />
+
+            <TextView
+                android:id="@+id/btnFour"
+                android:text="@string/button_4"
+                />
+
+            <TextView
+                android:id="@+id/btnFive"
+                android:text="@string/button_5"
+                />
+
+            <TextView
+                android:id="@+id/btnSix"
+                android:text="@string/button_6"
+                />
+
+            <TextView
+                android:id="@+id/btnMinus"
+                android:text="@string/button_subtraction"
+                />
+
         </LinearLayout>
 
 
@@ -104,6 +204,66 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnPi"
+                android:text="@string/button_numberPi"
+                />
+
+            <TextView
+                android:id="@+id/btnOne"
+                android:text="@string/button_1"
+                />
+
+            <TextView
+                android:id="@+id/btnTwo"
+                android:text="@string/button_2"
+                />
+
+            <TextView
+                android:id="@+id/btnThree"
+                android:text="@string/button_3"
+                />
+
+            <TextView
+                android:id="@+id/btnPlus"
+                android:text="@string/button_addition"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Шестой ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnExp"
+                android:text="@string/button_exponent"
+                />
+
+            <TextView
+                android:id="@+id/btnThousand"
+                android:text="@string/button_000"
+                />
+
+            <TextView
+                android:id="@+id/btnPoint"
+                android:text="@string/button_point"
+                />
+
+            <TextView
+                android:id="@+id/btnZero"
+                android:text="@string/button_0"
+                />
+
+            <TextView
+                android:id="@+id/btnCalculate"
+                android:text="@string/button_calculate"
+                />
 
         </LinearLayout>
 
