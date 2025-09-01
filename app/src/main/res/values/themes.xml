@@ -5,5 +5,43 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+
+    <!-- Стиль для операций -->
+    <style name="Operations">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#171616</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FC4F05</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <!-- Стиль для дополнительных операций-->
+    <style name="Operations_Additional">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#171616</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#999594</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <!-- Стиль для цифр-->
+    <style name="Numbers">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#403E3D</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+
     <style name="Theme.SimpleCalculatorKotlin" parent="Base.Theme.SimpleCalculatorKotlin" />
 </resources>
