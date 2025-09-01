@@ -6,15 +6,300 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Поле вывода: результат + выражение -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Выражение -->
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:gravity="end"
+            android:text="@string/placeholder_expression"
+            android:singleLine="true"
+            android:ellipsize="start"
+            />
+
+        <!-- Результат -->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="end"
+            android:textSize="42sp"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:text="@string/placeholder_result"
+            />
+
+    </LinearLayout>
+
+
+
+    <!-- Экран с кнопками -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <!-- Первый ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:id="@+id/btnSqrt"
+                android:text="@string/button_squareRoot"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnLog2"
+                android:text="@string/button_log2"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnLn"
+                android:text="@string/button_ln"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnLeftBracket"
+                android:text="@string/button_leftBracket"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnRightBracket"
+                android:text="@string/button_rightBracket"
+                style="@style/Operations_Additional"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Второй ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnPow"
+                android:text="@string/button_powerOfNumber"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnClear"
+                android:text="@string/button_allClear"
+                style="@style/Operations"
+                />
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:text="@string/button_back"
+                style="@style/Operations"
+                />
+
+            <TextView
+                android:id="@+id/btnPercent"
+                android:text="@string/button_percent"
+                style="@style/Operations"
+                />
+
+            <TextView
+                android:id="@+id/btnDiv"
+                android:text="@string/button_division"
+                style="@style/Operations"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Третий ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnSin"
+                android:text="@string/button_sinus"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnSeven"
+                android:text="@string/button_7"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnEight"
+                android:text="@string/button_8"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnNine"
+                android:text="@string/button_9"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnTimes"
+                android:text="@string/button_multiplication"
+                style="@style/Operations"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Четвертый ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnCos"
+                android:text="@string/button_cosine"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnFour"
+                android:text="@string/button_4"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnFive"
+                android:text="@string/button_5"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnSix"
+                android:text="@string/button_6"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnMinus"
+                android:text="@string/button_subtraction"
+                style="@style/Operations"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Пятый ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnPi"
+                android:text="@string/button_numberPi"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnOne"
+                android:text="@string/button_1"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnTwo"
+                android:text="@string/button_2"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnThree"
+                android:text="@string/button_3"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnPlus"
+                android:text="@string/button_addition"
+                style="@style/Operations"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Шестой ряд кнопок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnExp"
+                android:text="@string/button_exponent"
+                style="@style/Operations_Additional"
+                />
+
+            <TextView
+                android:id="@+id/btnThousand"
+                android:text="@string/button_000"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnPoint"
+                android:text="@string/button_point"
+                style="@style/Numbers"
+                />
+
+            <TextView
+                android:id="@+id/btnZero"
+                android:text="@string/button_0"
+                style="@style/Numbers"
+                />
+
+            <!-- Кнопка получения результата -->
+            <TextView
+                android:id="@+id/btnCalculate"
+                android:text="@string/button_calculate"
+                style="@style/Operations"
+                android:background="@color/color_buttonCalculate"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
