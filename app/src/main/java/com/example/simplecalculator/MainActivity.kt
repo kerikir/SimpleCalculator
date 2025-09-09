@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity()
         // Отрисовка на дисплее калькулятора
         val textViewOperation: TextView = findViewById(R.id.operation) as TextView
 
-        textViewSqrt.setOnClickListener { textViewOperation.append("cos(") }
+        textViewSqrt.setOnClickListener { textViewOperation.append("sqrt(") }
         textViewLog.setOnClickListener { textViewOperation.append("log2(") }
         textViewLn.setOnClickListener { textViewOperation.append("ln(") }
         textViewLeftBracket.setOnClickListener { textViewOperation.append("(") }
@@ -67,5 +67,17 @@ class MainActivity : AppCompatActivity()
         textViewBack.setOnClickListener {  }
         textViewPercent.setOnClickListener { textViewOperation.append(" % ") }
         textViewDiv.setOnClickListener { textViewOperation.append(" / ") }
+
+        textViewSin.setOnClickListener { textViewOperation.append("sin(") }
+        textViewSeven.setOnClickListener { textViewOperation.append("7") }
+        textViewEight.setOnClickListener { textViewOperation.append("8") }
+        textViewNine.setOnClickListener { textViewOperation.append("9") }
+        textViewTimes.setOnClickListener { textViewOperation.append(" * ") }
+
+        textViewCos.setOnClickListener { textViewOperation.append("cos(") }
+        textViewFour.setOnClickListener { textViewOperation.append("4") }
+        textViewFive.setOnClickListener { textViewOperation.append("5") }
+        textViewSix.setOnClickListener { textViewOperation.append("6") }
+        textViewMinus.setOnClickListener { textViewOperation.append(" - ") }
     }
 }
