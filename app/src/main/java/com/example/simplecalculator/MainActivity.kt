@@ -79,5 +79,17 @@ class MainActivity : AppCompatActivity()
         textViewFive.setOnClickListener { textViewOperation.append("5") }
         textViewSix.setOnClickListener { textViewOperation.append("6") }
         textViewMinus.setOnClickListener { textViewOperation.append(" - ") }
+
+        textViewPi.setOnClickListener { textViewOperation.append("pi") }
+        textViewOne.setOnClickListener { textViewOperation.append("1") }
+        textViewTwo.setOnClickListener { textViewOperation.append("2") }
+        textViewThree.setOnClickListener { textViewOperation.append("3") }
+        textViewPlus.setOnClickListener { textViewOperation.append(" + ") }
+
+        textViewExp.setOnClickListener { textViewOperation.append("e") }
+        textViewThousand.setOnClickListener { textViewOperation.append("000") }
+        textViewPoint.setOnClickListener { textViewOperation.append(".") }
+        textViewZero.setOnClickListener { textViewOperation.append("0") }
+        textViewCalculate.setOnClickListener { textViewOperation.append(" =") }
     }
 }
