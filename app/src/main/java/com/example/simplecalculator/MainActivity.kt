@@ -26,5 +26,17 @@ class MainActivity : AppCompatActivity()
         val textViewBack = findViewById<TextView>(R.id.btnBack)
         val textViewPercent = findViewById<TextView>(R.id.btnPercent)
         val textViewDiv = findViewById<TextView>(R.id.btnDiv)
+
+        val textViewSin = findViewById(R.id.btnSin) as TextView
+        val textViewSeven = findViewById(R.id.btnSeven) as TextView
+        val textViewEight = findViewById(R.id.btnEight) as TextView
+        val textViewNine = findViewById(R.id.btnNine) as TextView
+        val textViewTimes = findViewById(R.id.btnTimes) as TextView
+
+        val textViewCos: TextView = findViewById<TextView>(R.id.btnCos)
+        val textViewFour: TextView = findViewById<TextView>(R.id.btnFour)
+        val textViewFive: TextView = findViewById<TextView>(R.id.btnFive)
+        val textViewSix: TextView = findViewById<TextView>(R.id.btnSix)
+        val textViewMinus: TextView = findViewById<TextView>(R.id.btnMinus)
     }
 }
