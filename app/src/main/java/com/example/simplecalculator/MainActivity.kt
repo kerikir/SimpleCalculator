@@ -38,5 +38,17 @@ class MainActivity : AppCompatActivity()
         val textViewFive: TextView = findViewById<TextView>(R.id.btnFive)
         val textViewSix: TextView = findViewById<TextView>(R.id.btnSix)
         val textViewMinus: TextView = findViewById<TextView>(R.id.btnMinus)
+
+        val textViewPi: TextView = findViewById(R.id.btnPi)
+        val textViewOne: TextView = findViewById(R.id.btnOne)
+        val textViewTwo: TextView = findViewById(R.id.btnTwo)
+        val textViewThree: TextView = findViewById(R.id.btnThree)
+        val textViewPlus: TextView = findViewById(R.id.btnPlus)
+
+        val textViewExp = findViewById<TextView>(R.id.btnExp)
+        val textViewThousand = findViewById<TextView>(R.id.btnThousand)
+        val textViewPoint = findViewById<TextView>(R.id.btnPoint)
+        val textViewZero = findViewById<TextView>(R.id.btnZero)
+        val textViewCalculate = findViewById<TextView>(R.id.btnCalculate)
     }
 }
