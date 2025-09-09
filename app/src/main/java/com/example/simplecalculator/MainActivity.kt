@@ -50,5 +50,22 @@ class MainActivity : AppCompatActivity()
         val textViewPoint = findViewById<TextView>(R.id.btnPoint)
         val textViewZero = findViewById<TextView>(R.id.btnZero)
         val textViewCalculate = findViewById<TextView>(R.id.btnCalculate)
+
+
+        // Привязка обработчика нажатий к кнопке
+        // Отрисовка на дисплее калькулятора
+        val textViewOperation: TextView = findViewById(R.id.operation) as TextView
+
+        textViewSqrt.setOnClickListener { textViewOperation.append("cos(") }
+        textViewLog.setOnClickListener { textViewOperation.append("log2(") }
+        textViewLn.setOnClickListener { textViewOperation.append("ln(") }
+        textViewLeftBracket.setOnClickListener { textViewOperation.append("(") }
+        textViewRightBracket.setOnClickListener { textViewOperation.append(")") }
+
+        textViewPow.setOnClickListener { textViewOperation.append("^") }
+        textViewClear.setOnClickListener { textViewOperation.text = "" }
+        textViewBack.setOnClickListener {  }
+        textViewPercent.setOnClickListener { textViewOperation.append(" % ") }
+        textViewDiv.setOnClickListener { textViewOperation.append(" / ") }
     }
 }
