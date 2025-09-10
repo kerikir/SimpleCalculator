@@ -64,7 +64,6 @@ class MainActivity : AppCompatActivity()
 
         textViewPow.setOnClickListener { textViewOperation.append("^") }
         textViewClear.setOnClickListener { textViewOperation.text = "" }
-        textViewBack.setOnClickListener {  }
         textViewPercent.setOnClickListener { textViewOperation.append(" % ") }
         textViewDiv.setOnClickListener { textViewOperation.append(" / ") }
 
@@ -91,5 +90,14 @@ class MainActivity : AppCompatActivity()
         textViewPoint.setOnClickListener { textViewOperation.append(".") }
         textViewZero.setOnClickListener { textViewOperation.append("0") }
         textViewCalculate.setOnClickListener { textViewOperation.append(" =") }
+
+        // Кнопка назад
+        textViewBack.setOnClickListener {
+            val s = textViewOperation.text.toString()
+            if (s != "")
+            {
+                textViewOperation.text = s.substring(0, s.length - 1)
+            }
+        }
     }
 }
