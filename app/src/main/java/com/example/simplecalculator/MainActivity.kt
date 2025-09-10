@@ -105,5 +105,15 @@ class MainActivity : AppCompatActivity()
             textViewOperation.text = ""
             textViewResult.text = ""
         }
+
+        // Копирование результата с дисплея ответа
+        textViewResult.setOnClickListener {
+            val resultText = textViewResult.text.toString()
+            if (resultText != "Error" && resultText != "")
+            {
+                textViewOperation.text = resultText
+                textViewResult.text = ""
+            }
+        }
     }
 }
