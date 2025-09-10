@@ -63,7 +63,6 @@ class MainActivity : AppCompatActivity()
         textViewRightBracket.setOnClickListener { textViewOperation.append(")") }
 
         textViewPow.setOnClickListener { textViewOperation.append("^") }
-        textViewClear.setOnClickListener { textViewOperation.text = "" }
         textViewPercent.setOnClickListener { textViewOperation.append(" % ") }
         textViewDiv.setOnClickListener { textViewOperation.append(" / ") }
 
@@ -98,6 +97,13 @@ class MainActivity : AppCompatActivity()
             {
                 textViewOperation.text = s.substring(0, s.length - 1)
             }
+        }
+
+        // Кнопка очистки
+        val textViewResult = findViewById<TextView>(R.id.result)
+        textViewClear.setOnClickListener {
+            textViewOperation.text = ""
+            textViewResult.text = ""
         }
     }
 }
