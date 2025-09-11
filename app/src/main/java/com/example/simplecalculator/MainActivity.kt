@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity()
 {
@@ -88,7 +89,6 @@ class MainActivity : AppCompatActivity()
         textViewThousand.setOnClickListener { textViewOperation.append("000") }
         textViewPoint.setOnClickListener { textViewOperation.append(".") }
         textViewZero.setOnClickListener { textViewOperation.append("0") }
-        textViewCalculate.setOnClickListener { textViewOperation.append(" =") }
 
         // Кнопка назад
         textViewBack.setOnClickListener {
@@ -113,6 +113,35 @@ class MainActivity : AppCompatActivity()
             {
                 textViewOperation.text = resultText
                 textViewResult.text = ""
+            }
+        }
+
+        textViewCalculate.setOnClickListener {
+            val expressionText = textViewOperation.text.toString().replace(" ","")
+            textViewOperation.append(" =")
+
+            if (expressionText != "")
+            {
+                try {
+                    // Строим выражение
+                    val expression = ExpressionBuilder(expressionText).build()
+                    // Нахождение ответа выражения
+                    val resultDouble = expression.evaluate()
+
+                    // Ответ в целочисленной форме
+                    val resultLong = resultDouble.toLong()
+                    // Если целое число, то отрасываем числа после запятой
+                    if (resultLong.toDouble() == resultDouble)
+                    {
+                        textViewResult.text = resultLong.toString()
+                    }
+                    else {
+                        textViewResult.text = resultDouble.toString()
+                    }
+                }
+                catch (e: Exception) {
+                    textViewResult.text = "Error"
+                }
             }
         }
     }
